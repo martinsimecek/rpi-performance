@@ -33,7 +33,7 @@ while True:
     load_average5 = LoadAverage(minutes=5).load_average
     load_average15 = LoadAverage(minutes=15).load_average
     server_host = 'seznam.cz'
-    server_response = PingServer(ServerHost).value
+    server_response = PingServer(server_host).value
 
     # Insert data to MariaDB
     cur.execute("INSERT INTO rpi.performance (measured_on, cpu_temperature, disk_usage, load_average1, load_average5, load_average15, server_host, server_response) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", (measured_on, cpu_temperature, disk_usage, load_average1, load_average5, load_average15, server_host, server_response))
