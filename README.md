@@ -3,7 +3,7 @@ Raspberry Performance Tracker
 
 ## Contact
 - Name: Martin Simecek
-- Email address: admin@martinsimecek.cz
+- Email address: hello@martinsimecek.cz
 
 ## About
 This app consists of a single Python file **performance.py** and MariaDB database (single data table). All measured indicators are taken from GPIO interface - [Gpiozero](https://gpiozero.readthedocs.io/en/stable/). Data is saved to **rpi.performance** table. The communication between Python and MariaDB is maintained with [MariaDB Connector/Python](https://mariadb.com/docs/appdev/connector-python/). Measurements can be also displayed in CLI in real time.
